@@ -1,10 +1,10 @@
 namespace DesafioProjetoHospedagem.Models
 {
-    public class Reserva
+    public class SuiteBooking
     {
-        public Reserva() { }
+        public SuiteBooking() { }
 
-        public Reserva(int reservedDays)
+        public SuiteBooking(int reservedDays)
         {
             ReservedDays = reservedDays;
         }

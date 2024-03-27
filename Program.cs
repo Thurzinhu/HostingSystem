@@ -16,10 +16,10 @@ hosts.Add(p2);
 Suite suite = new Suite(suiteType: "Premium", capacity: 2, pricePerDay: 30);
 
 // Cria uma nova reserva, passando a suíte e os hóspedes
-Reserva reserva = new Reserva(reservedDays: 12);
-reserva.RegisterSuite(suite);
-reserva.RegisterHosts(hosts);
+SuiteBooking suiteBooking = new SuiteBooking(reservedDays: 12);
+suiteBooking.RegisterSuite(suite);
+suiteBooking.RegisterHosts(hosts);
 
 // Exibe a quantidade de hóspedes e o valor da diária
-Console.WriteLine($"Hóspedes: {reserva.GetTotalHosts()}");
-Console.WriteLine($"Valor diária: {reserva.GetTotalPrice()}");
+Console.WriteLine($"Hóspedes: {suiteBooking.GetTotalHosts()}");
+Console.WriteLine($"Valor diária: {suiteBooking.GetTotalPrice()}");
